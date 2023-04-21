@@ -8,6 +8,8 @@ import tkinter as tk
 import customtkinter as ctk
 
 DOWNLOADS_FOLDER = "Downloads\\"
+if not os.path.exists(DOWNLOADS_FOLDER):
+    os.makedirs(DOWNLOADS_FOLDER)
 downloadStartTime = datetime.now()
 
 def timeToSeconds(t):
